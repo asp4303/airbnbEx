@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에어비앤비</title>
+    <!-- 페비콘 -->
+    <link rel="shortcut icon" href="img/airbnb.ico" type="image/x-icon">
+
+    <!-- 폰트어썸 CDN -->
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- 헤더 시작 -->
+    <div class="upper">
+        <!-- 네비게이션 -->
+        <header class="nav">
+            <div class="nav-out">
+                <div class="logo">
+                    <a href="#" class="logo-items">
+                        <div class="logo-img">
+                            <img src="img/airbnb.png" alt="로고" style="display: block;" width="30" height="32">
+                        </div>
+                    </a>
+                </div>
+                <div class="menu">
+                    <nav class="nav-menu">
+                        <div class="menu1">
+                            <div class="globe">
+                                <button type="button" class="menu-list" aria-expanded="false">
+                                    <div class="button-item">
+                                        <div class="globe-items" aria-hidden="true">
+                                            <div class="globe-img">
+                                                <i class="fas fa-globe" style="display: block; height: 16px; width: 16px;"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fas fa-angle-down" style="display: block;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </button>
+                            </div>
+                            <a href="#" class="menu-list">
+                                <div class="item">숙소 호스트 되기</div>
+                            </a>
+                            <a href="#" class="menu-list">
+                                <div class="item">체험 호스팅하기</div>
+                            </a>
+                            <a href="#" class="menu-list">
+                                <div class="item">도움말</div>
+                            </a>
+                            <a href="#" class="menu-list">
+                                <div class="item">로그인</div>
+                            </a>
+                        </div>
+                        <div class="menu2">
+                            <a href="#" class="reg">
+                                <div class="reg-in">회원 가입</div>
+                            </a>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- 헤더 외부 틀 -->
+        <!-- <div class="out-header"></div> -->
+        <!-- 검색창 -->
+        <div class="search-box">
+            <div class="search-out-box">
+                <div>
+                    <div class="search-in-box">
+                        <div>
+                            <form action="" role="search">
+                                <fieldset class="select-menu">
+                                    <div role="tablist">
+                                        <label for="" class="lable-item">
+                                            <span class="lable-span">
+                                                숙소
+                                            </span>
+                                        </label>
+                                        <label for="" class="lable-item">
+                                            <span class="lable-span">
+                                                장기 숙박
+                                            </span>
+                                        </label>
+                                        <label for="" class="lable-item">
+                                            <span class="lable-span">
+                                                체험
+                                            </span>
+                                        </label>
+                                        <a href="#" class="online-ex">
+                                            온라인 체험
+                                            <div class="new-icon">
+                                                <div class="new-text">NEW</div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </fieldset>
+                                <div class="under-menu">
+                                    <div class="under-menu-items1">
+                                        <div class="under-menu-item">
+                                            <div>
+                                                <div class="item-box">
+                                                    <label for="" class="item-box-lable">
+                                                        <div class="item-box-text">
+                                                            위치
+                                                        </div>
+                                                        <input type="text" class="item-box-input" placeholder="어디로 여행가세요?">
+                                                    </label>
+                                                    <span class="item-box-span"></span>
+                                                    <span class="item-box-span"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="middle-line"></div>
+                                        <div class="under-menu-item">
+                                            <div class="item-box">
+                                                <button class="item-box-button" aria-expanded="false" type="button">
+                                                    <div class="item-box-text">
+                                                        체크인/체크아웃
+                                                    </div>
+                                                    <div class="item-box-add">
+                                                        날짜 추가
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="middle-line"></div>
+                                        <div class="under-menu-item">
+                                            <button class="item-box-button" aria-expanded="false" type="button">
+                                                <div class="item-box-text">
+                                                    인원
+                                                </div>
+                                                <div class="item-box-add">
+                                                    게스트 추가
+                                                </div>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="under-menu-items2">
+                                        <button class="btn-submit" type="button">
+                                            <span class="btn-out-span"></span>
+                                            <span class="btn-in-span">
+                                                <span class="btn-span-items">
+                                                    <span class="btn-span-icon">
+                                                        <i class="fas fa-search"></i>
+                                                    </span>
+                                                    <span class="btn-span-text">검색</span>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 헤더 종료 -->
+
+    <main id="site-content">
+        <div class="content-container">
+            <div style="min-height: 400px;">
+                <div class="itemList">
+                    <!-- 응원 문구 -->
+                    <div class="main-item">
+                        <div class="main-box" style="background-color: transparent;">
+                            <div>
+                                <div id="cheer">
+                                    <div class="cheer-box">
+                                        <div class="cheer-in-box">
+                                            <section>
+                                                <h1 class="cheer-text">
+                                                    <span>
+                                                        모두가 힘을 모아 함께 한다면, <br> 이겨낼 수 있습니다.
+                                                    </span>
+                                                </h1>
+                                            </section>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- center img -->
+                    <div class="main-item">
+                        <div class="main-box" style="background-color: transparent;">
+                            <div>
+                                <div style="margin-top: 24px;">
+                                    <div></div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <div style="margin-top: 8px; margin-bottom: 8px;">
+                                            <div class="center-img-box">
+                                                <ul class="center-img-ul" style="margin-left: -5px; margin-right: -5px;">
+                                                    <li class="center-img-list" aria-hidden="false" style="border-width: 0px 5px; max-width: 33.3333%; flex: 0 0 33.3333%;">
+                                                        <div class="img-list-box">
+                                                            <div class="list-box-out">
+                                                                <a href="#" class="list-box-in">
+                                                                    <div class="img-item-box">
+                                                                        <div class="img-item-img">
+                                                                            <div class="item image" style="padding-top: 67%;">
+                                                                            <div class="item-img-detail">
+                                                                                <img src="img/1.png" alt="온라인체험" >
+                                                                            </div>
+                                                                        </div>
+                                                                            <div class="item-new">
+                                                                                <div class="item-new-detail" style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);">NEW</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="img-item-text">
+                                                                            <div class="item-text-box">
+                                                                                <div class="item-text-title">
+                                                                                    <span style="color: rgb(34, 34, 34);">온라인 체험</span>
+                                                                                </div>
+                                                                                <div class="item-text-word">
+                                                                                    <span style="color: rgb(113, 113, 113);">세계 각지의 호스트가 진행하고 모두 함께하는 독특한 체험을 즐겨보세요.</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="center-img-list" aria-hidden="false" style="border-width: 0px 5px; max-width: 33.3333%; flex: 0 0 33.3333%;">
+                                                        <div class="img-list-box">
+                                                            <div class="list-box-out">
+                                                                <a href="#" class="list-box-in">
+                                                                    <div class="img-item-box">
+                                                                        <div class="img-item-img">
+                                                                            <div class="item image" style="padding-top: 67%;">
+                                                                            <div class="item-img-detail">
+                                                                                <img src="img/2.png" alt="장기 숙박" >
+                                                                            </div>
+                                                                        </div>
+                                                                        </div>
+                                                                        <div class="img-item-text">
+                                                                            <div class="item-text-box">
+                                                                                <div class="item-text-title">
+                                                                                    <span style="color: rgb(34, 34, 34);">장기 숙박</span>
+                                                                                </div>
+                                                                                <div class="item-text-word">
+                                                                                    <span style="color: rgb(113, 113, 113);">한 달 이상 장기 숙박할 숙소를 에어비앤비에서 찾아보세요.</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="center-img-list" aria-hidden="false" style="border-width: 0px 5px; max-width: 33.3333%; flex: 0 0 33.3333%;">
+                                                        <div class="img-list-box">
+                                                            <div class="list-box-out">
+                                                                <a href="#" class="list-box-in">
+                                                                    <div class="img-item-box">
+                                                                        <div class="img-item-img">
+                                                                            <div class="item image" style="padding-top: 67%;">
+                                                                            <div class="item-img-detail">
+                                                                                <img src="img/3.png" alt="구호인력" >
+                                                                            </div>
+                                                                        </div>
+                                                                            <div class="item-new">
+                                                                                <div class="item-new-detail" style="background-color: rgb(255, 255, 255); color: rgb(34, 34, 34);">NEW</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="img-item-text">
+                                                                            <div class="item-text-box">
+                                                                                <div class="item-text-title">
+                                                                                    <span style="color: rgb(34, 34, 34);">구호 인력을 위한 숙소</span>
+                                                                                </div>
+                                                                                <div class="item-text-word">
+                                                                                    <span style="color: rgb(113, 113, 113);">코로나19 구호 인력을 위한 숙소를 찾거나 제공하세요.</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main-item"></div>
+                    <div class="main-item"></div>
+                    <div class="main-item"></div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+</html>

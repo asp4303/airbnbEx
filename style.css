@@ -1,0 +1,515 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+}
+
+main, article, header, nav, aside, details, figcaption, figure, footer, section{
+    display: block;
+}
+a{
+    text-decoration: none;
+}
+div{
+    display: block;
+}
+button{
+    text-rendering: auto;
+    letter-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    align-items: flex-start;
+    cursor: default;
+    background-color: white;
+}
+/* span{
+    outline: 1px solid #cc2643;
+} */
+
+ul{
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+li{
+    text-align: -webkit-match-parent;
+}
+
+/* 네비게이션 */
+header{
+    font-weight: 600;
+}
+.nav-out{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+}
+
+.logo-items{
+    align-items: center;
+    display: flex;
+    height: 80px;
+    position: relative;
+}
+
+.nav-menu{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 80px;
+}
+.menu1{
+    display: flex;
+    margin-right: 8px;
+}
+.globe{
+    position: relative;
+    display: inline;
+}
+.nav .nav-out .menu .nav-menu .menu2 a,
+.nav .nav-out .menu .nav-menu .menu1 a{
+    text-decoration: none;
+    color: #222;
+    font-weight: 600;
+    font-size: 14px;
+}
+.menu-list{
+    border-radius: 22px;
+    left: -3px;
+    display: inline-block;
+    padding: 12px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    text-align: inherit;
+    text-decoration: none;
+    user-select: none;
+    position: relative;
+    color: #222222;
+}
+.button-item{
+    align-items: center;
+    display: flex;
+    height: 100%;
+    position: relative;
+}
+.globe-items{
+    align-items: center;
+    display: flex;
+    height: 18px;
+    position: relative;
+}
+.globe-img{
+    margin-right: 6px;
+}
+.reg{
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+    margin: 0;
+    outline: none;
+    overflow: visible;
+    padding: 0 16px;
+    text-align: inherit;
+    text-decoration: none;
+    user-select: none;
+    align-items: center;
+    border-radius: 21px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.18);
+    height: 42px;
+    position: relative;
+    vertical-align: middle;
+    white-space: nowrap;
+    background-color: #ffffff;
+    border-color: #ebebeb;
+    color: #222222;
+}
+.reg-in{
+    margin-top: -1px;
+    position: relative;
+}
+
+/* 검색창 */
+.search-out-box{
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto 40px;
+    position: relative;
+}
+.search-in-box{
+    padding-bottom: 16px;
+    position: relative;
+}
+.select-menu{
+    border: 0px;
+    margin: 0px;
+    padding: 32px 0 16px;
+}
+.lable-item{
+    display: inline-block;
+    margin-right: 24px;
+    padding-bottom: 7px;
+    position: relative;
+}
+.lable-span{
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+    color: #222222;
+}
+.online-ex:last-child{
+    margin-right: 0px !important;
+}
+.online-ex{
+    outline: none;
+    font-size: 16px;
+    line-height: 20px;
+    border-bottom: 2px solid transparent;
+    color: #222222;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 24px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.new-icon{
+    background-color: #ff385c;
+    border-radius: 4px;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 18px;
+    margin-left: 8px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
+    text-transform: uppercase;
+    top: -1px;
+    vertical-align: middle;
+}
+.under-menu{
+    border: 1px solid #f7f7f7;
+    border-radius: 12px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+    color: #222222;
+    display: inline-flex;
+    width: 100%;
+    position: relative;
+}
+.under-menu-items1{
+    display: inline-flex;
+    width: 100%;
+}
+.under-menu-item{
+    flex: 1 0 0%;
+}
+.item-box{
+    margin: -1px;
+    position: relative;
+}
+.item-box-lable{
+    transition: border-color 0.2s ease;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    display: block;
+    padding: 16px 22px;
+    cursor: pointer;
+    position: relative;
+}
+
+.item-box-input{
+    display: block;
+    border: 0px;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background: none;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    color: #222222;
+    text-overflow: ellipsis;
+}
+.middle-line{
+    align-self: center;
+    border-right: 1px solid #dddddd;
+    flex: 0 1 0px;
+    height: 44px;
+}
+.item-box-button{
+    background: transparent;
+    border: 2px solid transparent;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0px;
+    outline: none;
+    overflow: hidden;
+    padding: 16px 22px;
+    text-decoration: none;
+    user-select: none;
+    transition: border-color 0.2s ease;
+    width: 100%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 12px;
+    position: relative;
+}
+.item-box-text{
+    font-size: 10px;
+    line-height: 12px;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-bottom: 4px;
+    text-align: start;
+}
+.item-box-add{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color: #222222;
+    opacity: 0.7;
+    text-align: start;
+}
+.under-menu-items2{
+    margin-left: 2px;
+    padding: 11px;
+}
+.btn-submit{
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    border-color: black;
+    width: auto;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    border-radius: 8px;
+    border-width: 1px;
+    outline: none;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 24px;
+    padding-right: 24px;
+    border: none;
+    background-color: #e31c5f;
+    color: #ffffff;
+    white-space: nowrap;
+    width: 94px;
+    height: 46px;
+}
+.btn-out-span{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.btn-span-items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+.btn-span-icon{
+    margin-left: -2px;
+    margin-right: 8px;
+    font-size: 0.9em;
+}
+
+/* 메인 컨텐츠 */
+
+/* 응원 문구 */
+.itemList{
+    overflow-anchor: none;
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+}
+.cheer-box{
+    margin: 0 0 16px;
+}
+.cheer-in-box{
+    font-size: 32px;
+    line-height: 36px;
+    color: rgb(146, 23, 77) ;
+}
+.cheer-text{
+    color: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+/* center img */
+.center-img-box{
+    position: relative;
+}
+.center-img-ul{
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding-left: 0px;
+    margin-bottom: 0px;
+    margin-top: 0;
+    min-width: 100%;
+    scroll-snap-type: mandatory;
+    list-style: none;
+}
+.center-img-list{
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    display: flex;
+    border-style: solid;
+    border-color: transparent;
+}
+.img-list-box{
+    height: 100%;
+    min-width: 100%;
+    display: flex;
+}
+.list-box-out{
+    width: 100%;
+    margin-right: 6px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+}
+.list-box-in{
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 100%;
+    border-radius: 0px;
+    outline: none;
+    background: transparent;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+}
+.img-item-box{
+    width: 100%;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    border-radius: 16px;
+}
+.img-item-img{
+    position: relative;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    background: rgb(72, 72, 72);
+    overflow: hidden;
+}
+.img-item-text{
+    padding-left: 16px;
+    padding-top: 12px;
+    padding-right: 16px;
+    padding-bottom: 16px;
+}
+.item-image{
+    position: relative;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+.item-new{
+    left: 16px;
+    position: absolute;
+    top: 16px;
+}
+.item-new-detail{
+    font-size: 10px;
+    line-height: 12px;
+    display: inline-block;
+    font-weight: 800;
+    padding-bottom: 4px;
+    padding-left: 6px;
+    padding-right: 6px;
+    padding-top: 4px;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+.item-img-detail{
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-img-detail img{
+    width: 100%;
+    height: 100%;
+
+}
+.item-text-box{
+    white-space: normal;
+}
+.item-text-title{
+    font-size: 18px;
+    line-height: 22px;
+    max-height: 44px;
+    text-overflow: ellipsis;
+    color: rgb(34, 34, 34);
+    font-weight: 600;
+    overflow: hidden;
+}
+.item-text-word{
+    font-size: 14px;
+    line-height: 18px;
+    max-height: 54px;
+    text-overflow: ellipsis;
+    color: rgb(113, 113, 113);
+    font-weight: 400;
+    margin-top: 4px;
+    overflow: hidden;
+}
