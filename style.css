@@ -513,3 +513,21 @@ header{
     margin-top: 4px;
     overflow: hidden;
 }
+
+/* 체험 소개 */
+.ex{
+    margin-top: 54px;
+    padding: 32px 0 40px;
+}
+.ex-box{
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1600px;
+}
+.ex-texts{
+    display: flex;
+    margin-bottom: 24px;
+}
+.ex-text{
+    flex: auto;
+}
