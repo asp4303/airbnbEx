@@ -364,8 +364,16 @@ header{
 /* 응원 문구 */
 .itemList{
     overflow-anchor: none;
-    padding-left: 40px !important;
-    padding-right: 40px !important;
+    /* padding-left: 40px ;
+    padding-right: 40px ; */
+}
+.main-box{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.cheer{
+    margin-left: 40px;
+    margin-right: 40px;
 }
 .cheer-box{
     margin: 0 0 16px;
@@ -518,6 +526,9 @@ header{
 .ex{
     margin-top: 54px;
     padding: 32px 0 40px;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100% !important;
 }
 .ex-box{
     padding-left: 40px;
@@ -529,5 +540,50 @@ header{
     margin-bottom: 24px;
 }
 .ex-text{
-    flex: auto;
+    flex: 1 1 auto;
+}
+.ex-button{
+    display: block;
+    flex: 0 0 auto;
+}
+.ex-text-title{
+    color: inherit;
+    font-size: 1em;
+    font-weight: inherit;
+    line-height: inherit;
+    margin: 0px;
+    padding: 0px;
+}
+.ex-title-text{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 800;
+    color: white;
+}
+.ex-text-word{
+    width: 460px;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+    margin-top: 4px;
+}
+.ex-button-text{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    width: auto;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 600;
+    padding: 7px 15px;
+    color: white;
+    margin: 0px;
+    text-decoration: none;
+    border-radius: 8px;
+    border-width: 1px;
+    border-style: solid;
+    outline: none;
+    border-color: white;
+    background: transparent;
 }
