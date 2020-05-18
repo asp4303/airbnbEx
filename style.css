@@ -50,6 +50,10 @@ li{
 header{
     font-weight: 600;
 }
+.nav{
+    position: sticky;
+    z-index: 1;
+}
 .nav-out{
     display: flex;
     justify-content: space-between;
@@ -591,39 +595,358 @@ header{
     margin: 0px;
     overflow: visible;
     padding: 0px;
-    scroll-snap-type: x mandatory;
-    scroll-padding: 0px 24px;
 }
-.ex-pictures-box{
+.ex-pictures-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr !important;
-    grid-template-rows: 1fr 1fr !important;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 1fr;
     margin: -8px;
 }
-.ex-picture{
-    padding: 8px;
-    width: 100%;
-    flex: 0 0 auto;
+.picture-a{
+    cursor: pointer !important;
+    position: relative !important;
+    font-family: inherit !important;
+    font-size: inherit !important;
+    line-height: inherit !important;
+    font-weight: inherit !important;
+    color: inherit !important;
+    display: block !important;
+    text-align: inherit !important;
+    height: 100% !important;
+    width: 100% !important;
+    border-radius: 0px !important;
+    outline: none !important;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+    background: transparent !important;
+    border-width: initial !important;
+    border-style: none !important;
+    border-color: initial !important;
+    border-image: initial !important;
+    margin: 0px !important;
+    padding: 8px !important;
+    text-decoration: none !important;
 }
 .picture-box{
+    height: 100% !important;
+    position: relative !important;
+    width: 100% !important;
+}
+.picture-box-out{
+    position: relative !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+.picture-box-text{
+    background-color: rgb(0, 0, 0) !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    position: absolute !important;
+    right: 0px !important;
+}
+.picture-text{
+    font-size: 16px !important;
+    line-height: 20px !important;
+    background-color: rgb(34, 34, 34) !important;
+    color: rgb(255, 255, 255) !important;
+    font-weight: 600 !important;
+    min-height: 76px !important;
+    border-radius: 0px 0px 16px 16px !important;
+    padding: 16px !important;
+}
+.picture-box-in{
+    -webkit-box-pack: center !important;
+    -webkit-box-align: center !important;
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+.picture-img-src{
     height: 100%;
-    position: relative;
     width: 100%;
 }
 .picture-img{
+    display: none;
+    background-image: none;
+    vertical-align: bottom !important;
+    height: 100% !important;
+    width: 100% !important;
+    position: absolute !important;
+    top: 0px !important;
+    bottom: 0px !important;
+    left: 0px !important;
+    right: 0px !important;
+    background-position: 50% 50% !important;
+    background-repeat: no-repeat !important;
+}
+.picture-box-in picture{
     width: 100%;
 }
-.picture-img img{
-    width: 100%;
-}
-.picture-text{
-    font-size: 16px;
-    line-height: 20px;
-    background-color: rgb(34, 34, 34);
-    color: white;
-    font-weight: 600;
-    min-height: 76px;
-    border-radius: 0px 0px 16px 16px;
-    padding: 16px;
 
+/* 동참하기 */
+.help{
+    margin: 48px 0px;
 }
+.help-box{
+    padding-left: 40px;
+    padding-right: 40px;
+    max-width: 1600px;
+}
+.help-in-box{
+    display: flex;
+    color: rgb(34, 34, 34);
+}
+.help-left{
+    padding-right: 16px;
+    flex: 1 1 0%;
+}
+.help-right{
+    flex: 1 1 0%;
+}
+.help-title{
+    font-size: 26px;
+    line-height: 30px;
+    font-weight: 800;
+}
+.help-a{
+    display: block;
+    margin-top: 24px;
+}
+.help-title-text{
+    color: inherit !important;
+    font-size: 1em !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.help-a-text{
+    cursor: pointer !important;
+    display: inline-block !important;
+    position: relative !important;
+    text-align: center !important;
+    width: auto !important;
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    font-weight: 600 !important;
+    padding-top: 7px !important;
+    padding-bottom: 7px !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+    color: rgb(34, 34, 34) !important;
+    margin: 0px !important;
+    text-decoration: none !important;
+    border-radius: 8px !important;
+    border-width: 1px !important;
+    border-style: solid !important;
+    outline: none !important;
+    transition: box-shadow 0.2s ease 0s, -ms-transform 0.1s ease 0s, -webkit-transform 0.1s ease 0s, transform 0.1s ease 0s !important;
+    border-color: rgb(34, 34, 34) !important;
+    background: rgb(255, 255, 255) !important;
+}
+.help-word{
+    font-size: 16px !important;
+    line-height: 24px !important;
+    color: rgb(34, 34, 34) !important;
+    margin-top: 0px !important;
+}
+
+/* 정보 확인하기 */
+.info{
+    padding-left: 40px !important;
+    padding-right: 40px !important;
+    max-width: 1600px !important;
+    padding-top: 40px;
+}
+.info-title{
+    color: inherit !important;
+    font-size: 1em !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.info-text{
+    display: flex !important;
+    scroll-snap-type: x mandatory !important;
+    overflow-x: auto !important;
+    flex-wrap: wrap !important;
+    scroll-padding: 0px !important;
+}
+.info-span{
+    font-size: 22px !important;
+    line-height: 26px !important;
+    color: rgb(34, 34, 34) !important;
+    font-weight: 600 !important;
+    margin-left: 0px !important;
+}
+.info-text:nth-child(n) > *{
+    flex-shrink: 0 !important;
+    flex-basis: initial !important;
+    scroll-snap-stop: always !important;
+    scroll-snap-align: start !important;
+}
+.info-up{
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    display: flex !important;
+    flex-direction: column !important;
+    width: calc(100% - 72px) !important;
+    color: rgb(34, 34, 34) !important;
+    padding-top: 24px !important;
+    overflow: hidden !important;
+}
+@media(min-width: 744px){
+    .info-up {
+        -webkit-box-flex: 1 !important;
+        padding-top: 32px !important;
+        flex-grow: 1 !important;
+        width: calc(50% - 16px) !important;
+    }
+}
+@media (min-width: 744px)
+{
+    .info-text:nth-child(n) > :first-child {
+    margin-left: 0px !important;
+    }
+}
+@media (min-width: 744px){
+    .info-text:nth-child(n) > :not(:last-child) {
+        margin-right: 16px !important;
+    }
+}
+
+.title-text{
+    font-size: 18px !important;
+    line-height: 24px !important;
+    padding-bottom: 16px !important;
+}
+
+.info-a{
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    display: flex !important;
+    flex-direction: column !important;
+    font-size: 16px !important;
+    line-height: 20px !important;
+    color: rgb(34, 34, 34) !important;
+    padding: 16px 0px !important;
+    border-top: 1px solid rgb(221, 221, 221) !important;
+}
+.info-a:nth-child(n) b{
+    font-weight: 600 !important;
+    margin-bottom: 0px;
+}
+.info-a-text {
+    white-space: pre-wrap !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+    color: rgb(113, 113, 113) !important;
+}
+
+@media (min-width: 744px){
+    .info-text:nth-child(n) > :not(:last-child) {
+        margin-right: 16px !important;
+    }
+}
+
+.info-text:nth-child(n) > :not(:last-child) {
+    margin-right: 12px !important;
+}
+
+@media (min-width: 744px){
+    .info-down {
+        -webkit-box-flex: 1 !important;
+        flex-grow: 1 !important;
+        width: calc(50% - 16px) !important;
+        padding-top: 48px !important;
+    }
+}
+.info-down{
+    -webkit-box-direction: normal !important;
+    -webkit-box-orient: vertical !important;
+    display: flex !important;
+    flex-direction: column !important;
+    color: rgb(34, 34, 34) !important;
+    padding-top: 24px !important;
+    overflow: hidden !important;
+}
+
+/* 푸터 */
+@media (min-width: 744px){
+    .content-info {
+        border-top: 1px solid #DDDDDD !important;
+    }
+}
+.footer{
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+    margin: 0 auto !important;
+    max-width: 1440px !important;
+}
+@media (min-width: 950px){
+    .footer {
+        padding-left: 40px !important;
+        padding-right: 40px !important;
+    }
+}
+.footer-info{
+    display: flex !important;
+    flex-direction: column !important;
+    padding-top: 40px !important;
+    padding-bottom: 40px !important;
+}
+.footer-icons{
+    padding-top: 24px !important;
+    padding-bottom: 24px !important;
+    border-top: 1px solid #DDDDDD !important;
+}
+.footer-info-text:not(:last-child) {
+    padding-bottom: 24px !important;
+    margin-bottom: 24px !important;
+    border-bottom: 1px solid #DDDDDD !important;
+}
+.footer-title{
+    color: #222222 !important;
+    text-transform: uppercase !important;
+    font-size: 12px !important;
+    margin-bottom: 0px !important;
+}
+.footer-info-ul{
+    list-style: none !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
+}
+.footer-info-li{
+    margin-top: 12px !important;
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+}
+@media (min-width: 744px){
+    .footer-info-li {
+        -ms-flex-preferred-size: 33.333333333333336% !important;
+        -webkit-flex-basis: 33.333333333333336% !important;
+        flex-basis: 33.333333333333336% !important;
+    }
+}
+
+.footer-li-a{
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    font-style: inherit !important;
+    font-variant: inherit !important;
+    text-decoration: none !important;
+    color: #222222 !important;
+    font-size: 14px !important;
+    line-height: 18px !important;
+}
+
