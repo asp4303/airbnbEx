@@ -561,7 +561,7 @@ header{
     color: white;
 }
 .ex-text-word{
-    width: 460px;
+    width: 440px;
     font-size: 16px;
     line-height: 20px;
     color: white;
@@ -586,4 +586,44 @@ header{
     outline: none;
     border-color: white;
     background: transparent;
+}
+.ex-pictures{
+    margin: 0px;
+    overflow: visible;
+    padding: 0px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 0px 24px;
+}
+.ex-pictures-box{
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr 1fr !important;
+    margin: -8px;
+}
+.ex-picture{
+    padding: 8px;
+    width: 100%;
+    flex: 0 0 auto;
+}
+.picture-box{
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+.picture-img{
+    width: 100%;
+}
+.picture-img img{
+    width: 100%;
+}
+.picture-text{
+    font-size: 16px;
+    line-height: 20px;
+    background-color: rgb(34, 34, 34);
+    color: white;
+    font-weight: 600;
+    min-height: 76px;
+    border-radius: 0px 0px 16px 16px;
+    padding: 16px;
+
 }
